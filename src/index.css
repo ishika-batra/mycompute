@@ -78,13 +78,13 @@ html {
 body {
   background: var(--backgroundColor);
   color: var(--textColor);
-  font-family: var(--bodyFont);
-  font-weight: 400;
-  line-height: 1.75;
+  font-family: var(--bodyFont) !important;
+  font-weight: 400 !important;
+  line-height: 1.75 !important;
 }
 
 p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem !important;
   max-width: 40em;
 }
 
@@ -93,34 +93,34 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0;
-  margin-bottom: 1.38rem;
+  margin: 0 !important;
+  margin-bottom: 1.38rem !important;
   font-family: var(--headingFont);
-  font-weight: 400;
-  line-height: 1.3;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
   text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
+  letter-spacing: var(--letterSpacing) !important;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
+  margin-top: 0 !important;
+  font-size: 3.052rem !important;
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 2.441rem !important;
 }
 
 h3 {
-  font-size: 1.953rem;
+  font-size: 1.953rem !important;
 }
 
 h4 {
-  font-size: 1.563rem;
+  font-size: 1.563rem !important;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 small,
@@ -336,7 +336,7 @@ header {
   color: #555;
   text-decoration: none;
   margin-bottom: 15px;
-  padding: 0 32px;
+  padding: 16px 32px;
 }
 
 .nav-icon {

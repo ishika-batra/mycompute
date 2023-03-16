@@ -1,7 +1,7 @@
 const Payment = () => {
   return (
     <>
-      <section class="flex flex-col justify-center">
+      <section class="flex flex-col justify-center pb-12">
         <div class="h-full">
           <div class="max-w-[360px] mx-auto">
             <div class="bg-white shadow-lg rounded-lg mt-9">
