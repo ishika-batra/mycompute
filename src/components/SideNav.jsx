@@ -11,9 +11,9 @@ const SideNav = () => {
         <MdOutlineDashboard className="nav-icon" />
         <span className="nav-title">Dashboard</span>
       </a>
-      <a href="/publish-jobs" className="nav-link" title={'Published Jobs'}>
+      <a href="/publish-jobs" className="nav-link" title={'Publish Jobs'}>
         <MdPublishedWithChanges className="nav-icon" />
-        <span className="nav-title">Published Jobs</span>
+        <span className="nav-title">Publish Jobs</span>
       </a>
       <a href="/connected-nodes" className="nav-link" title={'Connected Nodes'}>
         <MdConnectWithoutContact className="nav-icon" />
