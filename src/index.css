@@ -322,7 +322,12 @@ header {
   flex-direction: column;
   background-color: #f5f5f5;
   height: 100vh;
-  padding: 20px 32px;
+  padding: 20px 10px;
+}
+
+.active-nav-link.nav-link {
+  background-color: #fcfcfc;
+  border-left: 4px solid var(--primary-5);
 }
 
 .nav-link {
@@ -331,6 +336,7 @@ header {
   color: #555;
   text-decoration: none;
   margin-bottom: 15px;
+  padding: 0 32px;
 }
 
 .nav-icon {
@@ -342,8 +348,8 @@ header {
 }
 
 @media (max-width: 481px) {
-  .side-navbar {
-    padding: 20px 10px;
+  .nav-link {
+    padding: 0 10px;
   }
 
   .nav-title {
@@ -414,4 +420,86 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+/* PUBLISH JOBS */
+.form {
+  background: white;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+@media (max-width: 491px) {
+  .form {
+    padding: 1rem;
+  }
+}
+
+.publish-form {
+  text-align: left;
+}
+.publish-form div {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.publish-form div:nth-child(3) {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.publish-form div label {
+  font-size: 18px;
+}
+
+.form-item {
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  outline: none;
+  border: 1px solid var(--grey-light);
+  border-radius: 0.25rem;
+}
+.form-item:focus {
+  border-color: var(--primary-5);
+}
+.form-item::placeholder {
+  color: var(--grey-light);
+}
+
+.publish-form div .form-item {
+  margin-top: 0.25rem;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.75rem 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--primary-5);
+  color: var(--white);
+  border-radius: 0.25rem;
+  transition: var(--transition);
+  letter-spacing: 2px;
+  font-family: var(--bodyFont);
+  font-size: 1rem;
+}
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* MASTER NODES */
+
+/* SINGLE MASTER NODE */
+.content p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.content hr {
+  margin: 2rem 0;
+}
+
+.payment {
+  text-align: center;
 }

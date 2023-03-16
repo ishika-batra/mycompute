@@ -72,7 +72,7 @@ const Home = () => {
         <div className="progress-bars">
           {runningNodes.map((node) => {
             return (
-              <div className="progress-bar">
+              <div className="progress-bar" key={node.id}>
                 <h3>{node.name}</h3>
                 <ProgressBar
                   animated={node.status === 'Running' && 'true'}
@@ -80,16 +80,18 @@ const Home = () => {
                   now={node.percentage}
                 />
                 <div className="checkbox">
-                  <label class="container">Verified by Network</label>
+                  <label className="container">Verified by Network</label>
                   <input
+                    readOnly
                     type="checkbox"
                     checked={node.status === 'Completed' && 'checked'}
                   />
                 </div>
                 <div className="checkbox">
-                  <label class="container">Verified by Master Node</label>
+                  <label className="container">Verified by Master Node</label>
                   <input
                     type="checkbox"
+                    readOnly
                     checked={node.status === 'Completed' && 'checked'}
                   />
                 </div>
