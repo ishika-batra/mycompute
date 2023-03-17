@@ -20,7 +20,7 @@ const PublishJobs = () => {
             </div>
 
             <div>
-              <label htmlFor="data-publish">👉🏻 Algo Publish:</label>
+              <label htmlFor="data-publish">👉🏻 Execution Algo Publish:</label>
               <input
                 type="file"
                 required
